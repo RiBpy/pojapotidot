@@ -32,7 +32,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-r from-slate-900 to-slate-700 fixed nav">
+    <div className="flex sticky z-[50] top-0 justify-between items-center w-full h-20 md:px-20 px-6 text-white bg-gradient-to-r from-slate-900 to-slate-700 ">
       <div>
           <Image src="/assets/logo/logo.png" width={30} height={30}/>
       </div>
