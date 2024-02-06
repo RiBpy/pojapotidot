@@ -54,7 +54,7 @@ const Slide = () => {
   };
 
   return (
-    <div className="relative w-full h-[50vh] overflow-hidden my-20 rounded-lg shadow-lg flex items-center">
+    <div className="relative w-full h-[50vh] overflow-hidden my-10 rounded-lg shadow-lg flex items-center">
       {slidesData.map((slide, index) => (
         <div
           key={index}
@@ -64,7 +64,7 @@ const Slide = () => {
           style={{ backgroundImage: `url(${slide.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
           {/* Card Over Image */}
-          <div className="absolute left-[20%] w-[20vw] top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray p-6 rounded-lg">
+          <div className="hidden md:block absolute left-[20%] w-[20vw] top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray p-6 rounded-lg">
             <h2 className="text-2xl font-semibold mb-4">{slide.title}</h2>
             <p className="text-gray-600 mb-4">{slide.description}</p>
             <p className="text-gray-800 font-bold mb-2">{slide.price}</p>

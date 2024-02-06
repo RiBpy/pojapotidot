@@ -19,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className= {`${poppins.className}`}><Navbar/><div className="px-20">{children}</div></body>
+      <body className= {`${poppins.className}`}><Navbar/><div className="px-10 md:px-20">{children}</div></body>
     </html>
   );
 }

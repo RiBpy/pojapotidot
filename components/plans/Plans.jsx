@@ -1,8 +1,6 @@
 import React from "react";
 import { Check, X } from "react-feather";
-
-const Plans = () => {
-  const plansData = [
+const plansData = [
     {
       name: "Basic",
       price: 2000,
@@ -32,13 +30,14 @@ const Plans = () => {
       ],
     },
   ];
- console.log(plansData.map(plan=>plan.features.map(feature=>feature.text)))
+
+const Plans = () => {
   return (
-    <div className="h-max my-10 relative flex justify-center items-center">
+    <div className="h-max pt-10 relative flex justify-center items-center">
       {plansData.map((plan, index) => (
         <div
           key={index}
-          className={`w-96 p-8 ${
+          className={`w-full border border-gray md:w-96 p-8 ${
             plan?.popular
               ? "bg-gradient-to-r from-slate-900 to-slate-700"
               : "bg-white"
